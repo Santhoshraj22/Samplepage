@@ -1,0 +1,37 @@
+/* Container for the image */
+.cover {
+    position: relative;           /* Needed to position the text on top */
+    width: 100%;                  /* Full width */
+    height: 400px;                /* Adjust this to the size you want */
+  }
+  
+  .cover img {
+    width: 100%;                  /* Make image responsive */
+    height: 100%;                 /* Make image take the full container height */
+    object-fit: cover;            /* Ensure the image covers the container without distortion */
+    border-radius: 10px;          /* Optional: adds rounded corners to the image */
+  }
+  
+  .overlay-content {
+    position: absolute;           /* Position the content absolutely inside the cover */
+    top: 50%;                     /* Position the content vertically centered */
+    left: 50%;                    /* Position the content horizontally centered */
+    transform: translate(-50%, -50%); /* Adjust for perfect centering */
+    color: white;                 /* White text color for visibility */
+    text-align: center;           /* Center the text inside the div */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark semi-transparent background for readability */
+    padding: 20px;                /* Some padding around the text */
+    border-radius: 10px;          /* Optional: rounded corners for the overlay */
+  }
+  
+  /* Responsive: Adjusting the height of the cover on smaller screens */
+  @media (max-width: 768px) {
+    .cover {
+      height: 250px; /* Adjust for mobile view */
+    }
+  
+    .overlay-content {
+      padding: 10px; /* Reduce padding on smaller screens */
+    }
+  }
+  

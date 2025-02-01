@@ -1,0 +1,138 @@
+
+.home-container {
+    text-align: center; 
+    padding: 20px;
+    background-color:#e3f0f9;
+}
+
+
+.home-container h2 {
+    font-size: 24px; 
+    font-weight: bold;
+    margin-bottom: 30px;  
+    color: #333;        
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;      
+}
+
+
+.playimg {
+    width: 150px;           
+    height: 150px;            
+    border-radius: 50%;       
+    object-fit: cover;        
+    border: 5px solid #fff;   
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 30px; 
+}
+
+
+.button-container button {
+    padding: 15px 30px; 
+    font-size: 18px;    
+    border: none;       
+    border-radius: 25px;
+    cursor: pointer;    
+    transition: background-color 0.3s ease;
+}
+
+
+.free-download {
+    background-color: darkorange; 
+    color: white;              
+}
+
+.free-download:hover {
+    background-color: #218838; 
+}
+
+
+.buy-now {
+    background-color: #dc3545; 
+    color: white;             
+}
+
+.buy-now:hover {
+    background-color: #c82333; 
+}
+
+.discount-badge {
+    background-color: #ff9800; 
+    color: white;            
+    padding: 5px 10px;         
+    border-radius: 12px;      
+    font-size: 14px;           
+    position: absolute;       
+    top: -5px;                
+    right: -10px;             
+}
+
+.amount {
+    display: flex;             
+    align-items: center;         
+    justify-content: center;   
+    gap: 10px;                   
+    font-size: 20px;          
+}
+
+
+.amount h2 {
+    margin: 0;                  
+    font-weight: bold;         
+}
+
+
+.headerimage {
+    width: 80px;            
+    height: 80px;           
+    border-radius: 50%;      
+    object-fit: cover;       
+    margin-right: 15px;      
+}
+
+
+.additional-images {
+    display: grid;           
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;              
+    justify-items: center;   
+    margin-top: 20px;
+}
+
+.additional-images div {
+    display: flex;           
+    align-items: center;     
+    justify-content: center; 
+    text-align: left;        
+}
+
+.additional-images p {
+    margin-left: 10px;     
+    font-size: 14px;         
+    color: #333;             
+}
+
+
+@media (max-width: 600px) {
+ 
+    .additional-images {
+        grid-template-columns: 1fr;
+    }
+
+    .headerimage {
+        width: 60px;       
+        height: 60px;          
+    }
+}
